@@ -1,1 +1,13 @@
-
+Kiểm tra trạng thái dhcp: sudo nano systemctl status isc-dhcp-server
+Kiểm tra trạng thái dhcpv6: sudo nano systemctl status isc-dhcp-server6
+Kiểm tra trạng thái dns: sudo nano systemctl status bind9
+Chỉ định card mạng: sudo nano /etc/default/isc-dhcp-server
+Cấu hình cấp IP: 
+    DHCPv4: sudo nano /etc/dhcp/dhcpd.conf
+    DHCPv6: sudo nano /etc/dhcp/dhcpd6.conf
+Cấu hình forwarders(DNS): sudo nano /etc/bind/named.conf.options
+Khai báo zone: sudo nano /etc/bind/named.conf.local
+Relay agent: ip helper-address 192.168.2.7
+Chỉ định DNS : ip name-server 192.168.2.7
+Bật chức năng định tuyến IPv6: ipv6 unicast-routing
+Kiểm tra cú pháp của file dhcpd.conf: sudo dhcpd -t -cf /etc/dhcp/dhcpd.conf
