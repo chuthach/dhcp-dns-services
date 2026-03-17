@@ -1,5 +1,6 @@
 #Đề tài:  TRIỂN KHAI QUẢN TRỊ DỊCH VỤ DHCP, DNS TRÊN LINUX
-#Mô hình mạng: ![Lỗi hiển thị](./images/nettopo.png)
+#Mô hình mạng:
+![Lỗi hiển thị](./images/nettopo.png)
 #Nội dung:
 - Cài đặt isc-dhcp-server và bind9
 - Cấu hình cấp ip tĩnh, ip động theo pool
